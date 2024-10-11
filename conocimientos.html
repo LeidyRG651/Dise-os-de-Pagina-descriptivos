@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
     <title>Conocimientos</title> <!-- Título del documento -->
-    </head>
-
+</head>
 <body>
     <header>
         <div class="logo">
@@ -14,16 +13,24 @@
             <a href="descriptivos.html" class="back-button">Volver a Inicio</a>
         </div>
     </header>
-</head>
-<body>
-   
+
+    <nav>
+        <ul>
+            <li><a href="conocimientos.html">Conocimientos</a></li>
+            <li><a href="contexto.html">Contexto</a></li>
+            <li><a href="descriptivos.html">Descriptivos</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="funciones.html">Funciones</a></li>
+            <li><a href="idiomas.html">Idiomas</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
 
     <h1 class="titulo1">Conocimientos</h1> <!-- Contenido principal -->
      
-        <p> Establece la obligatoriedad de poseer conocimientos avalados por entidad competente, nivel y título requerido.</p>
+    <p> Establece la obligatoriedad de poseer conocimientos avalados por entidad competente, nivel y título requerido.</p>
 
     <form action="idiomas.html" method="post" class="formularios">
-
         <p>¿Para desempeñar el cargo es indispensable certificar conocimientos?</p>
         <input type="checkbox" value="si">
         <label for="si">Si</label>
@@ -37,7 +44,7 @@
         <input type="checkbox" value="primariaIncompleta">
         <label for="primariaIncompleta">Primaria incompleta</label>
         <input type="checkbox" value="primariaCompleta">
-        <label for="primariaCompleta">Primeria completa</label>
+        <label for="primariaCompleta">Primaria completa</label>
         <input type="checkbox" value="bachilleratoIncompleto">
         <label for="bachilleratoIncompleto">Bachillerato incompleto</label>
         <input type="checkbox" value="bachilleratoCompleto">
@@ -53,20 +60,19 @@
         <input type="checkbox" value="especializacion">
         <label for="especializacion">Especialización</label>
         <br>
-        <p><label for="titulo">Indique el título requerido: <input type="titulo"></p>
+        <p><label for="titulo">Indique el título requerido: <input type="text" id="titulo" name="titulo"></label></p>
         <br>
 
         <p><b>Estudios complementarios</b></p>
-        <p><label for="tipoEstudios1">Tipo de estudios complementarios: <input type="tipoEstudios1"></p>
-        <p><label for="tipoEstudios2">Tipo de estudios complementarios: <input type="tipoEstudios2"></p> 
+        <p><label for="tipoEstudios1">Tipo de estudios complementarios: <input type="text" id="tipoEstudios1" name="tipoEstudios1"></label></p>
+        <p><label for="tipoEstudios2">Tipo de estudios complementarios: <input type="text" id="tipoEstudios2" name="tipoEstudios2"></label></p> 
             
         <br>
-        <button type="submit"> Enviar</button>
+        <button type="submit">Enviar</button>
     </form>
 
     <footer>
         <p>Aplicación para la creación de descriptivos de puestos de trabajo - Todos los derechos reservados</p> <!-- Información de derechos de autor -->
     </footer>
-
 </body>
 </html>
