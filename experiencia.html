@@ -5,72 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
     <title>Experiencia</title> <!-- Título del documento -->
-    </head>
+</head>
 
 <body>
     <header>
         <nav>
-    <ul>
-        <li><a href="conocimientos.html">Conocimientos</a></li>
-        <li><a href="contexto.html">Contexto</a></li>
-        <li><a href="descriptivos.html">Descriptivos</a></li>
-        <li><a href="experiencia.html">Experiencia</a></li>
-        <li><a href="funciones.html">Funciones</a></li>
-        <li><a href="idiomas.html">Idiomas</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-    </ul>
-</nav>
-
+            <ul>
+                <li><a href="conocimientos.html">Conocimientos</a></li>
+                <li><a href="contexto.html">Contexto</a></li>
+                <li><a href="descriptivos.html">Descriptivos</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="funciones.html">Funciones</a></li>
+                <li><a href="idiomas.html">Idiomas</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
         <div class="logo">
-            <img src="imagenes/profesiones.jpg.png" alt="Logo Aplicación"> <!-- Imagen del logo -->
+            <img src="imagenes/profesiones.jpg" alt="Logo Aplicación"> <!-- Imagen del logo -->
             <a href="descriptivos.html" class="back-button">Volver a Inicio</a>
         </div>
     </header>
 
-    <h1 class="titulo1">Experiencia</h1> <!-- Contenido principal -->
-     
-        <p> Define su obligatoriedad para ocupar el cargo, asi como las áreas y los tiempos requeridos.</p>
+    <main>
+        <h1 class="titulo1">Experiencia</h1> <!-- Contenido principal -->
+        <p>Define su obligatoriedad para ocupar el cargo, así como las áreas y los tiempos requeridos.</p>
 
-    <form action="conocimientos.html" method="post" class="formularios">
+        <form action="conocimientos.html" method="post" class="formularios">
+            <p>¿Para desempeñar el cargo es indispensable contar con experiencia?</p>
+            <input type="radio" id="experiencia_si" name="experiencia" value="si">
+            <label for="experiencia_si">Sí</label>
 
-        <p>¿Para desempeñar el cargo es indispensable contar con experiencia?</p>
-        <input type="checkbox" value="si">
-        <label for="si">Si</label>
+            <input type="radio" id="experiencia_no" name="experiencia" value="no">
+            <label for="experiencia_no">No</label>
 
-        <input type="checkbox" value="no">
-        <label for="no">No</label>
+            <p><b>Áreas de experiencia</b></p>
+            <p>Especifique las áreas de experiencia y el tiempo requerido expresado en meses y/o años.</p>
+            
+            <div class="area-experiencia">
+                <label for="areaExperiencia1">Área de experiencia 1: 
+                    <textarea rows="1" cols="65" id="areaExperiencia1" required></textarea>
+                </label>
+                <label for="tiempoExperiencia1">Elige el tiempo:</label>
+                <select id="tiempoExperiencia1" name="tiempoExperiencia1">
+                    <option value="meses">Meses</option>
+                    <option value="años">Años</option>
+                </select>
+                <label for="cantidadExperiencia1">Cantidad: <input type="number" id="cantidadExperiencia1" required></label>
+            </div>
 
-        <p><b>Areas de experiencia</b></p>
-        <p>Especifique las áreas de experiencia y el tiempo requerido expresado en meses y/o años.</p>
-        
-        <p><label for="areaExperiencia1">Area de experiencia 1: <textarea rows="1" cols="65" id="areaExperiencia1"></textarea> </label> <label for="tiempoExperiencia">Elige el tiempo:</label> 
-            <select id="tiempoExperiencia" name="tiempoExperiencia">
-                <option> Meses  </option>
-                <option> Años </option>
-            </select> <label for="cantidadExperiencia">Cantidad: <input type="cantidadExperiencia"></p> 
+            <div class="area-experiencia">
+                <label for="areaExperiencia2">Área de experiencia 2: 
+                    <textarea rows="1" cols="65" id="areaExperiencia2" required></textarea>
+                </label>
+                <label for="tiempoExperiencia2">Elige el tiempo:</label>
+                <select id="tiempoExperiencia2" name="tiempoExperiencia2">
+                    <option value="meses">Meses</option>
+                    <option value="años">Años</option>
+                </select>
+                <label for="cantidadExperiencia2">Cantidad: <input type="number" id="cantidadExperiencia2" required></label>
+            </div>
 
-        <p><label for="areaExperiencia2">Area de experiencia 2: <textarea rows="1" cols="65" id="areaExperiencia2"></textarea></label> <label for="tiempoExperiencia">Elige el tiempo:</label> 
-            <select id="tiempoExperiencia" name="tiempoExperiencia">
-                <option> Meses  </option>
-                <option> Años </option>
-            </select> <label for="cantidadExperiencia">Cantidad: <input type="cantidadExperiencia"></p> </p>
+            <div class="area-experiencia">
+                <label for="areaExperiencia3">Área de experiencia 3: 
+                    <textarea rows="1" cols="65" id="areaExperiencia3" required></textarea>
+                </label>
+                <label for="tiempoExperiencia3">Elige el tiempo:</label>
+                <select id="tiempoExperiencia3" name="tiempoExperiencia3">
+                    <option value="meses">Meses</option>
+                    <option value="años">Años</option>
+                </select>
+                <label for="cantidadExperiencia3">Cantidad: <input type="number" id="cantidadExperiencia3" required></label>
+            </div>
 
-        <p><label for="areaExperiencia3">Area de experiencia 3: <textarea rows="1" cols="65" id="areaExperiencia3"></textarea></label> <label for="tiempoExperiencia">Elige el tiempo:</label> 
-            <select id="tiempoExperiencia" name="tiempoExperiencia">
-                <option> Meses  </option>
-                <option> Años </option>
-            </select> <label for="cantidadExperiencia">Cantidad: <input type="cantidadExperiencia"></p> </p>
-       
-
-        <br>
-        <button type="submit"> Enviar</button>
-
-
-    </form>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
 
     <footer>
         <p>Aplicación para la creación de descriptivos de puestos de trabajo - Todos los derechos reservados</p> <!-- Información de derechos de autor -->
     </footer>
-
 </body>
 </html>
+
