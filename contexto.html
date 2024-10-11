@@ -6,102 +6,99 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contexto</title>
 </head>
-
-
 <body>
 
     <header>
         <div class="logo">
-            <img src="imagenes/profesiones.jpg.png" alt="Logo Aplicación">
+            <img src="imagenes/profesiones.jpg" alt="Logo Aplicación">
             <a href="descriptivos.html" class="back-button">Volver a Inicio</a>
         </div>
     </header>
-<nav>
-    <ul>
-        <li><a href="conocimientos.html">Conocimientos</a></li>
-        <li><a href="contexto.html">Contexto</a></li>
-        <li><a href="descriptivos.html">Descriptivos</a></li>
-        <li><a href="experiencia.html">Experiencia</a></li>
-        <li><a href="funciones.html">Funciones</a></li>
-        <li><a href="idiomas.html">Idiomas</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-    </ul>
-</nav>
 
+    <nav>
+        <ul>
+            <li><a href="conocimientos.html">Conocimientos</a></li>
+            <li><a href="contexto.html">Contexto</a></li>
+            <li><a href="descriptivos.html">Descriptivos</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="funciones.html">Funciones</a></li>
+            <li><a href="idiomas.html">Idiomas</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
 
-    <h1>Contexto del puesto</h1>
-    <div></div>
-    <p>Detalla los ambientes y condiciones de trabajo que afectan el desempeño del puesto.</p>
-    </div>
+    <main>
+        <h1>Contexto del puesto</h1>
+        <p>Detalla los ambientes y condiciones de trabajo que afectan el desempeño del puesto.</p>
 
-    <form action="experiencia.html" method="post" class="formularios">
+        <form action="experiencia.html" method="post" class="formularios">
+            <p><b>Jornada</b></p>
+            <input type="checkbox" id="diurna" value="diurna">
+            <label for="diurna">Diurna</label>
 
-        <p><b>Jornada</b></p>
-        
-        <input type="checkbox" value="diurna">
-        <label for="diurna">Diurna</label>
+            <input type="checkbox" id="nocturna" value="nocturna">
+            <label for="nocturna">Nocturna</label>
 
-        <input type="checkbox" value="nocturna">
-        <label for="nocturna">Nocturna</label>
-
-        <p><label for="modalidad">Elige la modalidad:</label> 
-            <select id="modalidad" name="modalidad">
-                <option selected>Tiempo completo</option>
-                <option>Medio tiempo</option>
-                <option>Por horas</option>
-            </select>
-            <label for="Horario">Horario: <input type="text" id="horario">
+            <p>
+                <label for="modalidad">Elige la modalidad:</label>
+                <select id="modalidad" name="modalidad">
+                    <option selected>Tiempo completo</option>
+                    <option>Medio tiempo</option>
+                    <option>Por horas</option>
+                </select>
             </p>
-                   
-        <p><b>Lugares de trabajo</b></p>
-        
-        <input type="checkbox" value="oficinas">
-        <label for="oficinas">Oficinas</label>
 
-        <input type="checkbox" value="bodegas">
-        <label for="bodegas">Bodegas</label> 
+            <p>
+                <label for="horario">Horario: <input type="text" id="horario" name="horario"></label>
+            </p>
 
-        <input type="checkbox" value="talleres">
-        <label for="talleres">Talleres</label> 
+            <p><b>Lugares de trabajo</b></p>
+            <input type="checkbox" id="oficinas" value="oficinas">
+            <label for="oficinas">Oficinas</label>
 
-        <input type="checkbox" value="remoto">
-        <label for="remoto">Remoto</label> 
+            <input type="checkbox" id="bodegas" value="bodegas">
+            <label for="bodegas">Bodegas</label>
 
-        <input type="checkbox" value="trabajoCampo">
-        <label for="trabajoCampo">Trabajo en campo </label> 
+            <input type="checkbox" id="talleres" value="talleres">
+            <label for="talleres">Talleres</label>
 
+            <input type="checkbox" id="remoto" value="remoto">
+            <label for="remoto">Remoto</label>
 
-        <p><b>Desplazamientos</b></p>
-        <p>¿El desempeño del trabajo implica desplazamientos?</p>
-        
-        <input type="checkbox" value="si">
-        <label for="si">Si</label>
+            <input type="checkbox" id="trabajoCampo" value="trabajoCampo">
+            <label for="trabajoCampo">Trabajo en campo</label>
 
-        <input type="checkbox" value="no">
-        <label for="no">No</label>
+            <p><b>Desplazamientos</b></p>
+            <p>¿El desempeño del trabajo implica desplazamientos?</p>
+            <input type="checkbox" id="desplazamientosSi" value="si">
+            <label for="desplazamientosSi">Si</label>
 
-        <p><b>Nivel de riesgos</b></p>
-        <p><label for="nivelRiesgos">Elige el nivel:</label> 
-            <select id="nivelRiesgos" name="nivelRiesgos">
-                <option> I  </option>
-                <option> II </option>
-                <option> III </option>
-                <option> IV </option>
-                <option> V </option>
-            </select>
+            <input type="checkbox" id="desplazamientosNo" value="no">
+            <label for="desplazamientosNo">No</label>
 
-        <p><label for="ergonomia">Condiciones ergonómicas: <textarea rows="2" cols="80" id="ergonomia"></textarea></label></p>
-                
-        <br>
-        <br>
+            <p><b>Nivel de riesgos</b></p>
+            <p>
+                <label for="nivelRiesgos">Elige el nivel:</label>
+                <select id="nivelRiesgos" name="nivelRiesgos">
+                    <option>I</option>
+                    <option>II</option>
+                    <option>III</option>
+                    <option>IV</option>
+                    <option>V</option>
+                </select>
+            </p>
 
-        <button type="submit"> Enviar</button>
-    
+            <p>
+                <label for="ergonomia">Condiciones ergonómicas:</label>
+                <textarea rows="2" cols="80" id="ergonomia" name="ergonomia"></textarea>
+            </p>
+
+            <button type="submit">Enviar</button>
         </form>
-    
-    
+    </main>
+
     <footer>
-        <p>Aplicación para la creación de descriptivos de puestos de trabajo - Todos los derechos reservados</p> <!-- Información de derechos de autor -->
+        <p>Aplicación para la creación de descriptivos de puestos de trabajo - Todos los derechos reservados</p>
     </footer>
 
 </body>
